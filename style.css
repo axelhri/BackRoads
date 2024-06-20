@@ -70,6 +70,7 @@ nav {
   font-weight: 900;
   font-size: 1.4rem;
   position: sticky;
+  z-index: 1;
   top: 0;
 }
 
