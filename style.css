@@ -571,11 +571,11 @@ article:hover {
   .article-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 3rem;
   }
 
   article {
-    flex-basis: calc(33.333% - 1rem);
+    flex-basis: calc(33.333% - 3rem);
   }
 
   #section-3 {
