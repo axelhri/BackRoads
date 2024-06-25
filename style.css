@@ -79,7 +79,7 @@ nav {
 }
 
 .backroads {
-  letter-spacing: var(--spacing);
+  letter-spacing: 0.2em;
 }
 
 .nav-icons {
@@ -560,10 +560,7 @@ article:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  #section2 {
-    inline-size: 100vw;
+    margin-inline-end: 1rem;
   }
 
   .section-2-container {
@@ -572,9 +569,13 @@ article:hover {
   }
 
   .article-grid {
-    display: grid;
-    grid-template: 1fr 1fr /1fr 1fr 1fr;
-    gap: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  article {
+    flex-basis: calc(33.333% - 1rem);
   }
 
   #section-3 {
@@ -604,8 +605,12 @@ article:hover {
   #section-5 {
     padding: 0;
     background: linear-gradient(rgb(44, 174, 186, 0.7), rgba(0, 0, 0, 0.7));
-    display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .loupe {
+    flex-basis: 25%;
   }
 
   .nav-list a:focus {
